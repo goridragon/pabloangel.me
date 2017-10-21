@@ -1,0 +1,44 @@
+{
+  "name": "pabloangel.me",
+  "version": "1.0.0",
+  "description": "Web Personal con Nextjs",
+  "main": "index.js",
+  "scripts": {
+    "gulp:dev": "gulp build",
+    "gulp:pro": "NODE_ENV=production gulp build",
+    "gulp:watch": "gulp watch",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pabloangel-me@github.com/pabloangel-me/pabloangel.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pabloangel-me/pabloangel.me/issues"
+  },
+  "homepage": "https://github.com/pabloangel-me/pabloangel.me#readme",
+  "devDependencies": {
+    "chalk": "^2.2.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-environments": "^0.1.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-refresh": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-stylus": "^2.6.0",
+    "lodash": "^4.17.4"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "next": "^4.1.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}

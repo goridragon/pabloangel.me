@@ -1,0 +1,237 @@
+//#######################################################################
+//
+//	BX SLIDER
+//
+//#######################################################################
+//	RESET AND LAYOUT
+//#######################################################################
+.bx-wrapper
+	position: relative
+	margin: 0 auto
+	padding: 0
+	*zoom: 1
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	img
+		max-width: 100%
+		display: block
+
+.bxslider
+	margin: 0
+	padding: 0
+
+ul.bxslider
+	list-style: none
+
+.bx-viewport
+	-webkit-transform: translatez(0)
+
+
+//#######################################################################
+//	THEME
+//#######################################################################
+.bx-wrapper
+	.bx-pager
+	.bx-controls-auto
+		position: absolute
+		bottom: -30px
+		width: 100%
+
+
+//#######################################################################
+//	LOADER
+//#######################################################################
+.bx-wrapper .bx-loading
+	_animation(rotation .6s infinite linear)
+	_border-radius(100%)
+	border: 2px solid rgba(255, 255, 255, .15)
+	border-top: 2px solid rgba(255, 255, 255, .8)
+	height: 20px
+	position: absolute
+	top: 0
+	left: 0
+	width: 20px
+	z-index: 2000
+	
+
+//#######################################################################
+//	PAGER
+//#######################################################################
+.bx-wrapper
+	.bx-pager
+		text-align: center
+		font-size: .85em
+		font-family: Arial
+		font-weight: bold
+		color: #666
+		padding-top: 20px
+		&.bx-default-pager a
+			_transition(.3s)
+			background: #FFF
+			text-indent: -9999px
+			display: block
+			width: 10px
+			height: 10px
+			margin: 0 5px
+			outline: 0
+			-moz-border-radius: 5px
+			-webkit-border-radius: 5px
+			border-radius: 5px
+			&:hover
+			&.active
+			&:focus
+				background: #2FEE7F
+	.bx-pager-item,
+	.bx-controls-auto .bx-controls-auto-item
+		display: inline-block
+		*zoom: 1
+		*display: inline
+	.bx-pager-item
+		font-size: 0
+		line-height: 0
+
+
+//#######################################################################
+//	DIRECTION CONTROLS (NEXT / PREV)
+//#######################################################################
+.bx-wrapper
+	.bx-prev
+		left: 10px
+		position: relative
+		&:before
+		&:after
+			_transition(.3s)
+			content: ' '
+			position: absolute
+			left: 50%
+			margin-left: -2px
+			height: 20px
+			width: 2px
+			background-color: #FFF
+		&:before
+			top: 0
+			_transform(skew(135deg, 0deg))
+		&:after
+			top: 20px
+			_transform(skew(-135deg, 0deg))
+		&:hover
+		&:focus
+			&:before
+			&:after
+				background-color: #DDDDDD
+	.bx-next
+		right: 10px
+		position: relative
+		&:before
+		&:after
+			_transition(.3s)
+			content: ' '
+			position: absolute
+			left: 50%
+			margin-left: -2px
+			height: 20px
+			width: 2px
+			background-color: #FFF
+		&:before
+			top: 0
+			_transform(skew(45deg, 0deg))
+		&:after
+			top: 20px
+			_transform(skew(-45deg, 0deg))
+		&:hover
+		&:focus
+			&:before
+			&:after
+				background-color: #DDDDDD
+	.bx-controls-direction a
+		position: absolute
+		top: 50%
+		margin-top: -16px
+		outline: 0
+		width: 40px
+		height: 40px
+		text-indent: -9999px
+		z-index: 9999
+		&.disabled
+			display: none
+
+
+//#######################################################################
+//	AUTO CONTROLS (START / STOP)
+//#######################################################################
+.bx-wrapper .bx-controls-auto
+	text-align: center
+	.bx-stop
+		_transition(.3s)
+		position: relative
+		display: block
+		text-indent: -9999px
+		width: 12px
+		height: 15px
+		outline: 0
+		margin-left: 8px
+		&:before
+		&:after
+			_transition(.3s)
+			content: ' '
+			position: absolute
+			left: 0
+			height: 12px
+			width: 2px
+			background-color: #FFF
+		&:after
+			top: 0
+			left: 6px
+		&:hover
+		&.active
+		&:focus
+			&:before
+			&:after
+				background-color: #DDDDDD
+	.bx-start
+		_transition(.3s)
+		width: 0
+		height: 0
+		border-top: 6px solid transparent
+		border-left: 8px solid #FFF
+		border-bottom: 6px solid transparent
+		display: block
+		position: relative
+		top: 6px
+		text-indent: -9999px
+		outline: 0
+		&:hover
+		&.active
+		&:focus
+			border-left: 8px solid #DDDDDD
+
+
+//#######################################################################
+//	PAGER WITH AUTO-CONTROLS HYBRID LAYOUT 
+//#######################################################################
+.bx-wrapper
+	.bx-controls.bx-has-controls-auto.bx-has-pager
+		.bx-pager
+			text-align: left
+			width: 80%
+		.bx-controls-auto
+			right: 0
+			width: 35px
+
+
+//#######################################################################
+//	IMAGE CAPTIONS
+//#######################################################################
+.bx-wrapper .bx-caption
+	position: absolute
+	bottom: 0
+	left: 0
+	background: #666
+	background: rgba(80, 80, 80, 0.75)
+	width: 100%
+	span
+		color: #fff
+		font-family: Arial
+		display: block
+		font-size: .85em
+		padding: 10px
