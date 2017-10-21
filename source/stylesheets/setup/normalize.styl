@@ -1,0 +1,312 @@
+//#######################################################################
+//
+//	NORMALIZE
+//
+//#######################################################################
+*,
+*:after,
+*:before
+	_box-sizing()
+	margin: 0
+	outline: none
+	padding: 0
+
+article
+aside
+details
+figcaption
+figure
+footer
+header
+hgroup
+main
+nav
+section
+summary
+	display: block
+
+audio
+canvas
+video
+	display: inline-block
+
+
+audio:not([controls]) 
+	display: none
+	height: 0
+
+[hidden]
+	display: none
+
+html 
+	-ms-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+	font-family: sans-serif
+
+body
+	margin: 0
+
+a
+	text-decoration: none
+
+a:focus 
+	outline-offset: -2px
+	outline: 5px auto -webkit-focus-ring-color
+	outline: thin dotted #333
+
+
+a:hover,
+a:active 
+	outline: 0
+
+ul
+ol
+	list-style: none
+
+sub
+sup 
+	font-size: 75%
+	line-height: 0
+	position: relative
+	vertical-align: baseline
+
+
+sup 
+	top: -0.5em
+
+
+sub 
+	bottom: -0.25em
+
+
+img 
+	-ms-interpolation-mode: bicubic
+	border: 0
+	height: auto
+	max-width: 100%
+	vertical-align: middle
+	width: auto\9
+
+h1
+	font-size: 2em
+	margin: 0
+	line-height: 1em
+
+h1
+h2
+h3
+h4
+h5
+h6
+	font-family: 'open_sansregular', Helvetica, Arial, sans-serif
+	font-weight: normal
+
+abbr[title]
+	border-bottom: 1px dotted
+
+b
+strong
+	font-weight: bold
+
+dfn
+	font-style: italic
+
+hr
+	-moz-box-sizing: content-box
+	box-sizing: content-box
+	height: 0
+
+mark
+	background: #ff0
+	color: #000
+
+code
+kbd
+pre
+samp
+	font-family: monospace, serif
+	font-size: 1em
+
+pre
+	white-space: pre-wrap
+
+q
+	quotes: "\201C" "\201D" "\2018" "\2019"
+
+small
+	font-size: 80%
+
+svg:not(:root)
+	overflow: hidden
+
+#map_canvas img,
+.google-maps img 
+	max-width: none
+
+figure
+	margin: 0
+
+fieldset
+	border: 1px solid #c0c0c0
+	margin: 0 2px
+	padding: 0.35em 0.625em 0.75em
+
+legend
+	border: 0
+	padding: 0
+
+button
+input
+select
+textarea 
+	font-family: inherit
+	font-size: 100%
+	margin: 0
+	vertical-align: middle
+
+
+button
+input 
+	*overflow: visible
+	background: none
+	border: none
+	line-height: normal
+
+button
+select
+	text-transform: none
+
+button::-moz-focus-inner
+input::-moz-focus-inner 
+	border: 0
+	padding: 0
+
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] 
+	-webkit-appearance: button
+	cursor: pointer
+
+button[disabled]
+html input[disabled]
+	cursor: default
+
+label
+select
+button
+input[type="button"]
+input[type="reset"]
+input[type="submit"]
+input[type="radio"]
+input[type="checkbox"]
+	cursor: pointer
+
+input[type="radio"]
+input[type="checkbox"]
+	box-borders()
+	padding: 0
+
+input[type="search"] 
+	-webkit-appearance: textfield
+	box-borders()
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button 
+	-webkit-appearance: none
+
+textarea 
+	overflow: auto
+	vertical-align: top
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+.clearfix 
+	*zoom: 1
+
+.clearfix:before,
+.clearfix:after 
+	display: table
+	line-height: 0
+	content: ""
+
+.clearfix:after 
+	clear: both
+
+.hide-text 
+	background-color: transparent
+	border: 0
+	color: transparent
+	font: 0/0 a
+	text-shadow: none
+
+.input-block-level 
+	box-borders()
+	display: block
+	min-height: 30px
+	width: 100%
+
+a
+	outline: 0
+	&:active
+	&:focus
+		outline: 0
+ol
+ul
+	padding: 0
+	margin: 0
+
+@media print 
+	* 
+		background: transparent !important
+		box-shadow: none !important
+		color: #000 !important
+		text-shadow: none !important
+	
+	a,
+	a:visited 
+		text-decoration: underline
+	
+	a[href]:after 
+		content: " (" attr(href) ")"
+	
+	abbr[title]:after 
+		content: " (" attr(title) ")"
+	
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after 
+		content: ""
+	
+	pre,
+	blockquote 
+		border: 1px solid #999
+		page-break-inside: avoid
+	
+	thead 
+		display: table-header-group
+	
+	tr,
+	img 
+		page-break-inside: avoid
+	
+	img 
+		max-width: 100% !important
+	
+	@page	
+		margin: 0.5cm
+	
+	p,
+	h2,
+	h3 
+		orphans: 3
+		widows: 3
+	
+	h2,
+	h3 
+		page-break-after: avoid
+		

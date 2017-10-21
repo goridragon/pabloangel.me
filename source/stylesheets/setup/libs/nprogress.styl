@@ -1,0 +1,54 @@
+//#######################################################################
+//
+//	UI/UX - NProgress
+//
+//#######################################################################
+
+#nprogress
+	pointer-events: none
+	.bar
+		background: #00CC94
+		height: 2px
+		left: 0
+		position: fixed
+		top: 0
+		width: 100%
+		z-index: 1031
+	.peg
+		_box-shadow(0 0 10px #00CC94, 0 0 5px #00CC94)
+		_transform(rotate(3deg) translate(0px, -4px))
+		_opacity(1, 100)
+		display: block
+		height: 100%
+		position: absolute
+		right: 0px
+		width: 100px
+	.spinner
+		display: block
+		position: fixed
+		right: 15px
+		top: 15px
+		z-index: 1031
+	.spinner-icon
+		_animation(nprogress-spinner 400ms linear infinite)
+		border: solid 2px transparent
+		border-radius: 50%
+		border-left-color: #00CC94
+		border-top-color: #00CC94
+		box-sizing: border-box
+		height: 18px
+		width: 18px
+
+.nprogress-custom-parent
+	overflow: hidden
+	position: relative
+	#nprogress
+		.bar
+		.spinner
+			position: absolute
+
+@keyframes nprogress-spinner
+	0%
+		_transform(rotate(0deg))
+	100%
+		_transform(rotate(360deg))

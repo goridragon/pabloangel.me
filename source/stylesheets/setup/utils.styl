@@ -1,0 +1,101 @@
+//#######################################################################
+//
+//	UTILIDADES
+//
+//#######################################################################
+
+.hide-text
+	overflow: hidden
+	text-indent: 100%
+	white-space: nowrap
+
+_noselect()
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+_box-sizing()
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+_border-radius(parametro)
+	-webkit-border-radius parametro !important
+	-moz-border-radius parametro !important
+	border-radius parametro !important
+
+_border-radius-section(top, right, bottom, left)
+	-webkit-border-top-left-radius: top !important
+	-webkit-border-top-right-radius: right !important
+	-webkit-border-bottom-right-radius: bottom !important
+	-webkit-border-bottom-left-radius: left !important
+	-moz-border-radius-topleft: top !important
+	-moz-border-radius-topright: right !important
+	-moz-border-radius-bottomright: bottom !important
+	-moz-border-radius-bottomleft: left !important
+	border-top-left-radius: top !important
+	border-top-right-radius: right !important
+	border-bottom-right-radius: bottom !important
+	border-bottom-left-radius: left !important
+
+_opacity(n , pr)
+	-moz-opacity: n
+	-khtml-opacity: n
+	opacity: n
+	-ms-filter:unquote('"progid:DXImageTransform.Microsoft.Alpha"(Opacity='+pr+')')
+	filter: unquote('progid:DXImageTransform.Microsoft.Alpha(opacity='+pr+')')
+	filter:unquote('alpha(opacity='+pr+')')
+
+_box-shadow(parametro)
+	-moz-box-shadow: parametro
+	-webkit-box-shadow: parametro
+	box-shadow: parametro
+
+_text-shadow(parametro)
+	text-shadow: parametro
+
+_transform(parametro)
+	-moz-transform: parametro
+	-webkit-transform: parametro
+	-o-transform: parametro
+	-ms-transform: parametro
+	transform: parametro
+	
+_transition(parametro)
+	-webkit-transition: parametro
+	-moz-transition: parametro
+	-o-transition: parametro
+	-ms-transition: parametro
+	transition: parametro
+
+_animation(parametro)
+	-webkit-animation: parametro
+	-moz-animation: parametro
+	-o-animation: parametro
+	animation: parametro
+
+_perspective(parametro)
+	-webkit-perspective: parametro
+	perspective: parametro
+
+_transform-origin(parametro)
+	-webkit-transform-origin: parametro
+	transform-origin: parametro
+
+_transform-delay(parametro)
+	-webkit-transition-delay: parametro
+	transition-delay: parametro
+
+_pointer-events(parametro)
+	-webkit-pointer-events: parametro
+	pointer-events: parametro
+
+_user-select(parametro)
+	-webkit-user-select: parametro
+	-moz-user-select: parametro
+	-ms-user-select: parametro
+	-o-user-select: parametro
+	user-select: parametro

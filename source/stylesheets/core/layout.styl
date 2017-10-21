@@ -1,0 +1,221 @@
+//#######################################################################
+//
+//	Common
+//
+//#######################################################################
+
+.body_app
+	_transition(.3s)
+	height: 100%
+	min-height: 700px
+	position: relative
+	.wrapper__next
+	#__next
+	#__next > div
+		_transition(.3s)
+		height: 100%
+		position: relative
+
+
+//#######################################################################
+//	General
+//#######################################################################
+
+.main
+	_transition(.3s)
+	height: 100%
+	position: relative
+	.content__main
+		_transition(.3s)
+		background-image: url('/static/images/background.jpg')
+		background-position: center top
+		background-repeat: no-repeat
+		height: 100%
+		position: relative
+		.header__content
+			_transition(.3s)
+			height: 100px
+			position: absolute
+			top: 0px
+			width: 100%
+			z-index: 200
+			.inner__header
+				_align-content(flex-start)
+				_align-items(flex-start)
+				_flex-direction(row)
+				_flex-wrap(nowrap)
+				_flexbox(flex)
+				_justify-content(center)
+				_transition(.3s)
+				.logo__header
+					_align-self(auto)
+					_flex(0 1 auto)
+					_noselect()
+					_order(0)
+					_transition(.3s)
+					color: palette-white-3
+					cursor: default
+					display: block
+					font-family: 'robotolight', Helvetica
+					font-size: 1.2em
+					font-style: italic
+					padding-left: 20px
+					height: 100px
+					letter-spacing: 2px
+					line-height: 100px
+				.social__header
+					_align-self(auto)
+					_flex(1 1 auto)
+					_order(0)
+					_transition(.3s)
+					margin: 0
+					padding: 0
+					text-align: right
+					.item__social
+						_transition(.3s)
+						display: inline-block
+						margin: 0 4px
+						text-align: center
+						vertical-align: top
+						.link__social
+							_transition(.3s)
+							display: block
+							height: 100px
+							padding: 20px
+							text-align: center
+							.icon__social
+								_transition(.3s)
+								color: palette-white-3
+								display: block
+								font-size: 1.2em
+								height: 60px
+								line-height: 60px
+								&.icon-medium
+									font-size: 1em
+						&:hover
+							.link__social
+								.icon__social
+									color: palette-other-4
+		.title__content
+			_align-items(center)
+			_flexbox(flex)
+			_justify-content(center)
+			_transition(.3s)
+			height: 100%
+			padding-bottom: 220px
+			padding-top: 100px
+			position: relative
+			.frase__title
+				_noselect()
+				color: palette-white-3
+				cursor: default
+				display: block
+				font-family: 'robotolight', Helvetica
+				font-size: 2em
+				font-style: italic
+				letter-spacing: 2px
+				margin: 0 auto
+				padding: 8px 220px
+				text-align: center
+				.autor
+					_noselect()
+					color: palette-other-4
+					display: block
+					font-size: 15px
+		.footer__content
+			_transition(.3s)
+			background-color: rgba(0, 0, 0, .2)
+			bottom: 0px
+			height: 140px
+			position: absolute
+			width: 100%
+			.inner__footer
+				margin-top: -70px
+				.lists__footer
+					_align-content(flex-start)
+					_align-items(flex-start)
+					_flex-direction(row)
+					_flex-wrap(nowrap)
+					_flexbox(flex)
+					_justify-content(center)
+					_transition(.3s)
+					margin: 0
+					padding: 0
+					.item__footer
+						_align-self(auto)
+						_border-radius(10px)
+						_box-shadow(0px 7px 20px 0px rgba(0, 0, 0, 0.3))
+						_flex(1 1 auto)
+						_order(0)
+						_transition(.3s)
+						background-color: #E8EFF4
+						margin: 0px 15px
+						padding: 30px 10px
+						width: 33.3%
+						.h2__footer
+							_noselect()
+							color: palette-other-2
+							cursor: default
+							display: block
+							font-family: 'robotobold', Helvetica
+							font-size: 1.2em
+							letter-spacing: 2px
+							text-align: center
+							text-transform: uppercase
+						.p__footer
+							_noselect()
+							color: palette-other-1
+							cursor: default
+							display: block
+							font-family: 'robotolight', Helvetica
+							font-size: .9em
+							font-style: italic
+							letter-spacing: 1px
+							margin-top: 10px
+							padding: 0px 20px
+							text-justify: auto
+
+@media (max-width: 767px)
+	.main
+		.locura
+			background-color: violet
+		.content__main
+			.header__content
+				.inner__header
+					_flex-wrap(wrap)
+					.logo__header
+						text-align: center
+						width: 100%
+					.social__header
+						margin-top: -40px
+						text-align: center
+						width: 100%
+			.title__content
+				padding-top: 120px
+				.frase__title
+					font-size: 1.6em
+					padding: 8px 80px
+					.autor
+						font-size: .4em
+			.footer__content
+				.inner__footer
+					.lists__footer
+						_flex-wrap(wrap)
+						.item__footer
+							text-align: center
+							width: 100%
+							margin-bottom: 20px
+						
+@media (min-width: 768px) and (max-width: 991px)
+	.main
+		.content__main
+			.title__content
+				.frase__title
+					font-size: 1.7em
+					padding: 8px 100px
+					.autor
+						font-size: .4em
+
+
+
+
