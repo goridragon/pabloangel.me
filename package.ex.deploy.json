@@ -1,0 +1,36 @@
+{
+  "name": "pabloangel.me",
+  "version": "1.0.0",
+  "description": "Web Personal con Nextjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": "6.11.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pabloangel-me@github.com/pabloangel-me/pabloangel.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pabloangel-me/pabloangel.me/issues"
+  },
+  "keywords": [
+    "react",
+    "ssr",
+    "server-side-rendering"
+  ],
+  "homepage": "https://github.com/pabloangel-me/pabloangel.me#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "next": "^4.1.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}

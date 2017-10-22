@@ -7,7 +7,8 @@
 .body_app
 	_transition(.3s)
 	height: 100%
-	min-height: 700px
+	min-height: 778px
+	max-height: 778px
 	position: relative
 	.wrapper__next
 	#__next
@@ -175,10 +176,76 @@
 							padding: 0px 20px
 							text-justify: auto
 
-@media (max-width: 767px)
+
+@media (max-width: 240px)
 	.main
-		.locura
-			background-color: violet
+		.content__main
+			.header__content
+				.inner__header
+					_flex-wrap(wrap)
+					.logo__header
+						text-align: center
+						width: 100%
+					.social__header
+						margin-top: -40px
+						text-align: center
+						width: 100%
+						.item__social
+							.link__social
+								padding: 20px 4px
+			.title__content
+				padding-top: 80px
+				.frase__title
+					font-size: 1.2em
+					padding: 8px 20px
+					.autor
+						font-size: .4em
+			.footer__content
+				.inner__footer
+					.lists__footer
+						_flex-wrap(wrap)
+						.item__footer
+							text-align: center
+							width: 100%
+							margin-bottom: 20px
+
+
+@media (min-width: 241px) and (max-width: 400px)
+	.main
+		.content__main
+			.header__content
+				.inner__header
+					_flex-wrap(wrap)
+					.logo__header
+						text-align: center
+						width: 100%
+					.social__header
+						margin-top: -40px
+						text-align: center
+						width: 100%
+						.item__social
+							.link__social
+								padding: 20px 10px
+			.title__content
+				padding-top: 140px
+				.frase__title
+					font-size: 1.6em
+					padding: 8px 40px
+					.autor
+						font-size: .4em
+			.footer__content
+				.inner__footer
+					.lists__footer
+						_flex-wrap(wrap)
+						.item__footer
+							text-align: center
+							width: 100%
+							margin-bottom: 20px
+							
+
+
+@media (min-width: 401px) and (max-width: 767px)
+	.main
 		.content__main
 			.header__content
 				.inner__header
@@ -191,7 +258,7 @@
 						text-align: center
 						width: 100%
 			.title__content
-				padding-top: 120px
+				padding-top: 140px
 				.frase__title
 					font-size: 1.6em
 					padding: 8px 80px
@@ -205,7 +272,8 @@
 							text-align: center
 							width: 100%
 							margin-bottom: 20px
-						
+
+
 @media (min-width: 768px) and (max-width: 991px)
 	.main
 		.content__main
@@ -216,6 +284,32 @@
 					.autor
 						font-size: .4em
 
+
+@media (min-width: 1500px) and (max-width: 1799px)
+	.body_app
+		background-image: url('/static/images/dark_wall1.png')
+		margin: 0 auto
+		max-height: 778px
+		.main
+			.content__main
+				_border-radius(0px)
+				overflow: hidden
+
+
+@media (min-width: 1810px)
+	.body_app
+		background-image: url('/static/images/dark_wall2.png')
+		.main
+			display: block
+			height: 778px
+			left: 50%
+			margin-left: -720px
+			position: absolute
+			top: 50%
+			width: 1440px
+			.content__main
+				_border-radius(20px)
+				overflow: hidden
 
 
 
